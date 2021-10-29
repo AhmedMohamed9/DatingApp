@@ -13,5 +13,8 @@ namespace DatingApp.DataContext
         [Required]
         [MaxLength(50)]
         public string Username { get; set; }
+        public byte[] passwordHash { get; set; }
+        public byte[] passwordSalt { get; set; }
+
     }
 }
